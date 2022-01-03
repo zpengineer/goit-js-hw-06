@@ -3,10 +3,12 @@ const spanOutputRef = document.querySelector('#name-output');
 
 inputTextRef.addEventListener("input", (event) => {
 
-    if (inputTextRef.value === '') {
-        return spanOutputRef.textContent = "Anonymous";
-    }
-    spanOutputRef.textContent = event.currentTarget.value;
+    inputTextRef.value === '' ? spanOutputRef.textContent = "Anonymous" : spanOutputRef.textContent = event.currentTarget.value;
+
+    // if (inputTextRef.value === '') {
+    //     return spanOutputRef.textContent = "Anonymous";
+    // }
+    // spanOutputRef.textContent = event.currentTarget.value;
      
 });
 
